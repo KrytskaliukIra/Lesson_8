@@ -1,0 +1,359 @@
+/* &display=swap&subset=cyrillic-ext  */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap&subset=cyrillic-ext");
+
+@font-face {
+	font-family: "Acrom";
+	src: url("../fonts/Acrom-Regular.woff2") format("woff2"), url("../fonts/Acrom-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Acrom";
+	src: url("../fonts/Acrom-Bold.woff2") format("woff2"), url("../fonts/Acrom-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "HelveticaNeueCyr";
+	src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+		url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	vertical-align: middle;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 20px;
+	line-height: 1.25;
+}
+body {
+	font-family: "Acrom", sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ------------------------------ */
+
+.header,
+.footer {
+	background: #525252;
+	color: #ca3e47;
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+	padding: 50px;
+}
+main {
+	background: url("../img/greyfone.jpg");
+	text-align: center;
+}
+.block {
+	padding: 50px;
+}
+.conteiner {
+	font-size: 0px;
+}
+.conteiner .task:not(:last-child) {
+	margin: 0px 0px 10px 0px;
+}
+.conteiner .task.inline-block:not(:last-child) {
+	margin: 0px 15px 10px 0px;
+}
+.h2 {
+	display: inline-block;
+	color: #000;
+	background: rgb(0, 0, 0, 0.15);
+	border: #525252 3px solid;
+	border-radius: 15px;
+	font-weight: 700;
+	font-size: 30px;
+	padding: 15px;
+	margin: 0px auto 30px auto;
+}
+.h3 {
+	color: #ca3e47;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+.inline-block {
+	display: inline-block;
+}
+.task {
+	padding: 10px;
+	border: #525252 2px solid;
+	border-radius: 10px;
+	background: #ffffff;
+	color: #000;
+	font-size: 20px;
+	vertical-align: top;
+}
+.link1 a,
+.link2 a,
+.link3 a,
+.link4 a,
+.link5 a,
+.link6 a {
+	color: #000;
+}
+.link1:hover {
+	color: #0000ff;
+}
+.link2:visited {
+	color: #0e940e;
+}
+.link3:active {
+	background: rgb(0, 0, 0, 0.15);
+}
+.link4:focus {
+	outline: 2px solid #ca3e47;
+}
+.target {
+	display: none;
+}
+.target:target {
+	display: inline-block;
+	background: #ca3e47;
+}
+.link6:visited {
+	color: #0e940e;
+}
+.link6:hover {
+	color: #0000ff;
+}
+.link6:focus {
+	outline: 2px solid #ca3e47;
+}
+.link6:active {
+	background: rgb(0, 0, 0, 0.15);
+}
+.item {
+	display: block;
+	text-align: left;
+}
+.first-child p:first-child {
+	text-decoration: underline;
+}
+.ffirst-child *:first-child {
+	text-decoration: underline;
+}
+.last-child p:last-child {
+	text-decoration: underline;
+}
+.not-last-child *:not(:last-child) {
+	text-decoration: underline;
+}
+.first-of-type p:first-of-type {
+	text-decoration: underline;
+}
+.last-of-type span:last-of-type {
+	text-decoration: underline;
+}
+.nth-child *:nth-child(3) {
+	text-decoration: underline;
+}
+.nth-child-odd *:nth-child(odd) {
+	text-decoration: underline;
+}
+.nth-child-odd-p p:nth-child(odd) {
+	text-decoration: underline;
+}
+.nth-child-even *:nth-child(even) {
+	text-decoration: underline;
+}
+.first-line p::first-line {
+	text-decoration: underline;
+}
+.first-letter ::first-letter {
+	color: #ca3e47;
+	font-weight: 700;
+}
+.list1,
+.list2 {
+	line-height: 1.5;
+}
+.before .list1::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url("../img/list.png") 0px 0px / 20px 20px no-repeat;
+	margin: 0px 10px 0px 0px;
+}
+.before .list2::before {
+	content: "";
+	display: inline-block;
+	background-color: #ca3e47;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	vertical-align: top;
+	margin: 12px 10px 0px 40px;
+}
+.after .list1::after {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	vertical-align: top;
+	background-color: #ca3e47;
+	margin: 12px 0px 0px 5px;
+}
+.after .list1:hover::after {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	vertical-align: top;
+	background-color: #525252;
+	margin: 12px 0px 0px 5px;
+}
+.task.maket1 {
+	font-family: "roboto", sans-serif;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+.maket1 .conteiner1 {
+	text-align: left;
+	max-width: 583px;
+	margin: 0px 0px 68px 0px;
+}
+.maket1 .subtitle {
+	color: #5d62b5;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	margin: 0px 0px 33px 0px;
+}
+.maket1 .subtitle::before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 17px;
+	background: url("../img/OverlineMark.png") 0 0 / 17px 16px no-repeat;
+}
+.maket1 .title {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 900;
+}
+.maket1 .conteiner2 {
+	text-align: center;
+}
+.maket1 .item {
+	display: inline-block;
+	max-width: 324px;
+	text-align: left;
+	vertical-align: top;
+}
+.maket1 .item:not(:last-child) {
+	padding-right: 24px;
+	margin-bottom: 20px;
+}
+.maket1 .h4-1,
+.maket1 .h4-2,
+.maket1 .h4-3 {
+	color: #f2726f;
+	font-size: 19px;
+	line-height: 26px;
+	font-weight: 900;
+}
+.maket1 .text {
+	color: #4b4b4b;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	margin: 0px 0px 0px 86px;
+}
+.maket1 .h4-1::before,
+.maket1 .h4-2::before,
+.maket1 .h4-3::before {
+	content: "";
+	display: inline-block;
+	width: 56px;
+	height: 50px;
+	margin: 12px 26px 0px 0px;
+}
+.maket1 .h4-1::before {
+	background: url("../img/dog_love_24x.png") 0 0 / cover no-repeat;
+}
+.maket1 .h4-2::before {
+	background: url("../img/dog_vet_24x.png") 0 0 / cover no-repeat;
+}
+.maket1 .h4-3::before {
+	background: url("../img/dog_stream_24x.png") 0 0 / cover no-repeat;
+}
+.task.maket2 {
+	background: #252525;
+	font-family: "Helvetica Neue", sans-serif;
+	width: 255px;
+	text-align: left;
+	margin: 0 auto;
+	padding: 24px;
+}
+.maket2 .subtitle {
+	color: #ffffff;
+	font-size: 22px;
+	margin-bottom: 36px;
+	letter-spacing: -0.28px;
+}
+.maket2 .subtitle::after {
+	content: "";
+	display: block;
+	background: #34c759;
+	max-width: 56px;
+	height: 2px;
+	margin-top: 20px;
+}
+.maket2 .text {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.16px;
+}
+.footer a {
+	color: #ca3e47;
+}

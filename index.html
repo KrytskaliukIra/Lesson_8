@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 8</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<h1 id="top">Псевдоклассы и псевдоелементы</h1>
+		</header>
+
+		<main>
+
+			<div class="block">
+				<h2 class="h2">Псевдоклассы состояния</h2>
+				<div class="conteiner">
+					<a class="task inline-block link1" href="#">hover</a>
+					<a class="task inline-block link2" href="#">visited</a>
+					<a class="task inline-block link3" href="#">active</a>
+					<a class="task inline-block link4" href="#">focus</a>
+					<a class="task inline-block link5" href="#target">target</a>
+					<div id="target" class="task inline-block target">hidden/showed target
+					</div>
+					<a class="task inline-block link6" href="#">hover<br>+active<br>+focus<br>+visited</a>
+				</div>
+			</div>
+
+			<div class="block">
+				<h2 class="h2">Псевдоклассы положения в коде</h2>
+				<div class="conteiner">
+					<div class="task inline-block">
+						<h3 class="h3">p:first-child</h3>
+						<div class="first-child">
+							<!-- <span class="item">Cпан 1</span> -->
+							<p class="item">Параграф 1</p>
+							<p class="item">Параграф 2</p>
+							<span class="item">Cпан 2</span>
+							<p class="item">Параграф 3</p>
+							<p class="item">Параграф 4</p>
+						</div>
+					</div>
+					<div class="task inline-block">
+						<h3 class="h3">*:first-child</h3>
+						<div class="ffirst-child">
+							<span class="item">Cпан 1</span>
+							<p class="item">Параграф 1</p>
+							<p class="item">Параграф 2</p>
+							<span class="item">Cпан 2</span>
+							<p class="item">Параграф 3</p>
+							<p class="item">Параграф 4</p>
+						</div>
+					</div>
+					<div class="task inline-block">
+						<h3 class="h3">p:last-child</h3>
+						<div class="last-child">
+							<span class="item">Cпан 1</span>
+							<p class="item">Параграф 1</p>
+							<p class="item">Параграф 2</p>
+							<span class="item">Cпан 2</span>
+							<p class="item">Параграф 3</p>
+							<p class="item">Параграф4</p>
+						</div>
+					</div>
+					<div class="task inline-block">
+						<h3 class="h3">*:not(:last-child)</h3>
+						<div class="not-last-child">
+							<span class="item">Cпан 1</span>
+							<p class="item">Параграф 1</p>
+							<p class="item">Параграф 2</p>
+							<span class="item">Cпан 2</span>
+							<p class="item">Параграф 3</p>
+							<p class="item">Параграф4</p>
+						</div>
+					</div>
+					<div class="task inline-block">
+						<h3 class="h3">p:first-of-type</h3>
+						<div class="first-of-type">
+							<span class="item">Cпан 1</span>
+							<p class="item">Параграф 1</p>
+							<p class="item">Параграф 2</p>
+							<span class="item">Cпан 2</span>
+							<p class="item">Параграф 3</p>
+							<p class="item">Параграф 4</p>
+						</div>
+					</div>
+					<div class="task inline-block">
+						<h3 class="h3">span:last-of-type</h3>
+						<div class="last-of-type">
+							<span class="item">Cпан 1</span>
+							<p class="item">Параграф 1</p>
+							<p class="item">Параграф 2</p>
+							<span class="item">Cпан 2</span>
+							<p class="item">Параграф 3</p>
+							<p class="item">Параграф 4</p>
+						</div>
+					</div>
+					<div class="task inline-block">
+						<h3 class="h3">*:nth-child(3)</h3>
+						<div class="nth-child">
+							<span class="item">Cпан 1</span>
+							<p class="item">Параграф 1</p>
+							<p class="item">Параграф 2</p>
+							<span class="item">Cпан 2</span>
+							<p class="item">Параграф 3</p>
+							<p class="item">Параграф 4</p>
+						</div>
+					</div>
+					<div class="task inline-block">
+						<h3 class="h3">*:nth-child(odd)</h3>
+						<div class="nth-child-odd">
+							<span class="item">Cпан 1</span>
+							<p class="item">Параграф 1</p>
+							<p class="item">Параграф 2</p>
+							<span class="item">Cпан 2</span>
+							<p class="item">Параграф 3</p>
+							<p class="item">Параграф 4</p>
+						</div>
+					</div>
+					<div class="task inline-block">
+						<h3 class="h3">p:nth-child(odd)</h3>
+						<div class="nth-child-odd-p">
+							<span class="item">Cпан 1</span>
+							<p class="item">Параграф 1</p>
+							<p class="item">Параграф 2</p>
+							<span class="item">Cпан 2</span>
+							<p class="item">Параграф 3</p>
+							<p class="item">Параграф 4</p>
+						</div>
+					</div>
+					<div class="task inline-block">
+						<h3 class="h3">*:nth-child(even)</h3>
+						<div class="nth-child-even">
+							<span class="item">Cпан 1</span>
+							<p class="item">Параграф 1</p>
+							<p class="item">Параграф 2</p>
+							<span class="item">Cпан 2</span>
+							<p class="item">Параграф 3</p>
+							<p class="item">Параграф 4</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block">
+				<h2 class="h2">Псевдоелементы</h2>
+				<div class="conteiner">
+
+					<div class="task">
+						<h3 class="h3">::first-line</h3>
+						<div class="first-line">
+							<p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+								perspiciatis, in eligendi cumque assumenda ipsum cum accusantium aperiam illo pariatur non
+								quod maiores aliquid praesentium adipisci asperiores quam sequi architecto.
+							</p>
+						</div>
+					</div>
+
+					<div class="task">
+						<h3 class="h3">::first-letter</h3>
+						<div class="first-letter">
+							<p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+								perspiciatis, in eligendi cumque assumenda ipsum cum accusantium aperiam illo pariatur non
+								quod maiores aliquid praesentium adipisci asperiores quam sequi architecto.
+							</p>
+							<span class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+								perspiciatis, in eligendi cumque assumenda ipsum cum accusantium aperiam illo pariatur non
+								quod maiores aliquid praesentium adipisci asperiores quam sequi architecto.
+							</span>
+							<p class="item">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, vitae? Nulla architecto
+								nam deserunt? Corrupti obcaecati quod alias dolor tempora, doloribus nulla eum, at quo nisi
+								illo porro maiores. Corrupti.
+							</p>
+						</div>
+					</div>
+
+					<div class="task">
+						<h3 class="h3">::before</h3>
+						<div class="before">
+							<ul class="item">
+								<li class="list1">пункт списка1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Quas nulla quia veritatis et sint vero enim odit sequi labore! Cupiditate quis possimus
+									rem dicta quasi laudantium eaque similique laboriosam perspiciatis.
+
+								</li>
+								<li class="list1">пункт списка1</li>
+								<li>
+									<ul>
+										<li class="list2">пункт списка2</li>
+										<li class="list2">пункт списка2</li>
+										<li class="list2">пункт списка2</li>
+									</ul>
+								</li>
+								<li class="list1">пункт списка1</li>
+								<li class="list1">пункт списка1</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="task">
+						<h3 class="h3">::after</h3>
+						<div class="after">
+							<ul class="item">
+								<li class="list1">пункт списка</li>
+								<li class="list1">пункт списка</li>
+								<li class="list1">пункт списка</li>
+								<li class="list1">пункт списка</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block">
+				<h2 class="h2">Макет 1</h2>
+				<div class="task maket1">
+					<div class="conteiner1">
+						<h2 class="subtitle">OUR PROMISE TO YOU</h2>
+						<h3 class="title">Sed perspiciatis omnis iste natus</h3>
+					</div>
+					<div class="conteiner2">
+						<div class="item">
+							<h4 class="h4-1">24/7 Love & Care</h4>
+							<p class="text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+								praesentium corrupti quos dolores et quas.</p>
+						</div>
+						<div class="item">
+							<h4 class="h4-2">On-site Veterinarian</h4>
+							<p class="text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+								numquam eius modi tempora incidunt.</p>
+						</div>
+						<div class="item">
+							<h4 class="h4-3">Live-stream Cameras</h4>
+							<p class="text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+								nihil
+								molestiae consequatur illum.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="block">
+				<h2 class="h2">Макет 2</h2>
+				<div class="task maket2">
+					<h2 class="subtitle">Choose How Often</h2>
+					<p class="text">Our team of chefs do the prep work - no more chopping, measuring, or sink full of
+						dishes!
+					</p>
+				</div>
+			</div>
+
+		</main>
+
+		<footer>
+			<div class="footer">
+				<a href="#top"> Home</a>
+			</div>
+		</footer>
+
+	</div>
+</body>
+
+</html>
